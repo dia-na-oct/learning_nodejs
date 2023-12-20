@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./prtials/head.ejs')%>
+
+<body>
+  <h1>title: <%= title %></h1>
+
+  <%- include('./prtials/nav.ejs')%>
+
+
+
+<div class="create-blog content">
+  <form action="/blogs" method="post">
+    <label for="title">BLOG TITLE:</label>
+    <input type="text" id="TITLE" required name="title">
+    <label for=""snippet>BLOG SNIPPET:</label>
+    <input type="text" id="snippet" required name="snippet">
+    <label for="body"> BLOG BODY:</label>
+    <input  type="text" id="body" required  name="body">
+    <button>SUBMIT</button>
+  </form>
+</div>
+</body>
+</html>
